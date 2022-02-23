@@ -1,0 +1,4 @@
+az aks update -n example-aks1 -g devops-RG --attach-acr tiagomatanaunyleya
+
+
+az aks get-credentials --admin --name example-aks1 --resource-group devops-RG
