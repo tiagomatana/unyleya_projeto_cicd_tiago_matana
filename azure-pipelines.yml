@@ -26,5 +26,5 @@ stages:
         containerRegistry: 'ACR'
         repository: 'azure-vote'
         command: 'buildAndPush'
-        Dockerfile: '$(Build.SourcesDirectory)/azure-vote/Dockerfile-for-app-service'
+        Dockerfile: '$(Build.SourcesDirectory)/azure-vote/Dockerfile'
         tags: 'latest'
