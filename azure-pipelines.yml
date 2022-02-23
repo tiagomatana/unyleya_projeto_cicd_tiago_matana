@@ -27,4 +27,4 @@ stages:
         repository: 'azure-vote'
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/azure-vote/Dockerfile'
-        tags: '$(tag)'
+        tags: 'latest'
