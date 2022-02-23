@@ -28,3 +28,8 @@ stages:
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/azure-vote/Dockerfile'
         tags: 'latest'
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(Pipeline.Workspace)'
+        artifact: 'build'
+        publishLocation: 'pipeline'
